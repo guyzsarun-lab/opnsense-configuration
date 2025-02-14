@@ -1,0 +1,13 @@
+opnsense = {
+  uri        = "https://opnsense.proxmox.local"
+  api_key    = ""
+  api_secret = ""
+}
+
+dns_override = [
+  {
+    hostname = ["kong"]
+    domain   = "proxmox.local"
+    server   = "172.16.128.2"
+  }
+]
