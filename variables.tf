@@ -1,12 +1,3 @@
-variable "opnsense" {
-  type = object({
-    uri        = string
-    api_key    = string
-    api_secret = string
-  })
-  sensitive = true
-}
-
 variable "dns_override" {
   type = list(object({
     hostname = list(string)
@@ -18,4 +9,11 @@ variable "dns_override" {
     domain   = "example.com"
     server   = ""
   }]
+}
+variable "vault" {
+  sensitive = true
+  type = object({
+    mount = string
+    name = string
+  })
 }
