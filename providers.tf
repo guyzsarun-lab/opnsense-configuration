@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     vault = {
-      source = "hashicorp/vault"
+      source  = "hashicorp/vault"
       version = "4.6.0"
     }
     opnsense = {
@@ -9,7 +9,7 @@ terraform {
       version = "0.11.0"
     }
   }
- cloud {
+  cloud {
 
     organization = "guyzsarun-terraform-cloud"
 
@@ -21,7 +21,7 @@ terraform {
 
 data "vault_kv_secret_v2" "opnsense_credentials" {
   mount = var.vault.mount
-  name = "${var.vault.name}"
+  name  = var.vault.name
 }
 provider "opnsense" {
   uri        = data.vault_kv_secret_v2.opnsense_credentials.data["uri"]
