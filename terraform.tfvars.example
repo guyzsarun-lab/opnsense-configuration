@@ -1,9 +1,3 @@
-opnsense = {
-  uri        = "https://opnsense.proxmox.local"
-  api_key    = ""
-  api_secret = ""
-}
-
 dns_override = [
   {
     hostname = ["kong"]
@@ -11,3 +5,8 @@ dns_override = [
     server   = "172.16.128.2"
   }
 ]
+
+vault = {
+  name = "opnsense"
+  mount = "/kv-v2"
+}
