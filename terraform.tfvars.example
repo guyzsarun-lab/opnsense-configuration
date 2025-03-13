@@ -1,11 +1,3 @@
-dns_override = [
-  {
-    hostname = ["kong"]
-    domain   = "proxmox.local"
-    server   = "172.16.128.2"
-  }
-]
-
 vault = {
   name = "opnsense"
   mount = "/kv-v2"
