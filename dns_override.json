@@ -1,0 +1,28 @@
+[
+  {
+    "hostname": ["k8s"],
+    "domain": "proxmox.local",
+    "server": "172.16.128.3"
+  },
+  {
+    "hostname": ["ha"],
+    "domain": "proxmox.local",
+    "server": "172.16.0.11"
+  },
+  {
+    "hostname": ["argo", "detector", "gateway", "nextcloud", "harbor", "maybe", "vault", "minio"],
+    "domain": "proxmox.local",
+    "server": "172.16.0.13"
+  },
+
+  {
+    "hostname": ["pve"],
+    "domain": "proxmox.local",
+    "server": "10.243.100.160"
+  },
+  {
+    "hostname": ["server"],
+    "domain": "proxmox.local",
+    "server": "10.243.100.143"
+  }
+]
