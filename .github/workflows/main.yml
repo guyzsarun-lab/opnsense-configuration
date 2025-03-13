@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  TFC_TOKEN: ${{ secrets.TFC_TOKEN }}
+  TF_TOKEN_app_terraform_io: ${{ secrets.TFC_TOKEN }}
 
 jobs:
   terraform:
