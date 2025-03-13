@@ -17,7 +17,19 @@ This project contains configuration files and scripts for setting up and managin
     To generate api key and secret, follow the steps below:
     - Go to `System` > `Access` > `Users`.
     - Click on the `API keys` tab.
-4. Run Terraform to setup the infrastructure:
+4. Update the `dns_override.json` file for the DNS override configuration. See [dns_override](dns_override.json).
+
+- Example dns override for k8s.example.com to 192.168.1.1
+    ```json
+    [
+        {
+            "hostname": ["k8s"],
+            "domain": "example.com",
+            "server": "192.168.1.1"
+        }
+    ]
+    ```
+5. Run Terraform to setup the infrastructure:
     ```sh
     terraform init
     terraform apply
