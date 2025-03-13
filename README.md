@@ -1,4 +1,5 @@
 # OPNsense Configuration
+[![terraform](https://github.com/guyzsarun-lab/opnsense-configuration/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/guyzsarun-lab/opnsense-configuration/actions/workflows/main.yml)
 
 ## Overview
 This project contains configuration files and scripts for setting up and managing an OPNsense firewall. OPNsense is an open-source, easy-to-use, and easy-to-build FreeBSD-based firewall and routing platform.
